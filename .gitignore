@@ -1,0 +1,9 @@
+# dependencies
+/node_modules
+
+/results
+/private
+
+# System Files
+.DS_Store
+Thumbs.db
