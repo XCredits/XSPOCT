@@ -1,1 +1,21 @@
-{"burnTransactions":{"mwj2rf9JZHVypkUVhBTapbDvCAr5xVtJQ3":{"transactionString":"{\"source\":{\"utxo\":\"a23420bf69ad5948bddf61232181e2e1f0df51e5230107679051aa96f39c3ce5\",\"platform\":\"bitcoin-testnet\"},\"outputs\":[{\"amount\":100000,\"spendInfoHash\":\"b9129f5c77e8fb6815982d917834177270480610eb01f619062e558cb20912d4\"},{\"amount\":100000,\"spendInfoHash\":\"4e996b2b952038be26446bc6722327d349999e2b1e882fd5b4b0101a693dea34\"}],\"specification\":\"0.1.0\"}","spendInfoStrings":{"4e996b2b952038be26446bc6722327d349999e2b1e882fd5b4b0101a693dea34":"{\"proofInputAddress\":\"msSDeL7vz8AcbLSsiDT3tyRX2eF76ppqbd\",\"specification\":\"0.1.0\",\"verificationPlatform\":\"bitcoin-testnet\"}"},"txId":"da37bd10eca857f871bea23b67d8d7d1456156ce169ea0a2ec3c47598e985acb"}},"xspoctTransactions":{},"current":{"burnTransactionAddress":"mwj2rf9JZHVypkUVhBTapbDvCAr5xVtJQ3"},"next":{"proofInputAddress":"msSDeL7vz8AcbLSsiDT3tyRX2eF76ppqbd","proofInputPrivateKey":"63f827fe9539d738a0bff259f1bef739a2ff924323628003ddd4d5d3696c704e"},"amount":100000}
+{
+  "burnTransactions": {
+    "mwj2rf9JZHVypkUVhBTapbDvCAr5xVtJQ3": {
+      "transactionString":
+        "{\"source\":{\"utxo\":\"a23420bf69ad5948bddf61232181e2e1f0df51e5230107679051aa96f39c3ce5\",\"platform\":\"bitcoin-testnet\"},\"outputs\":[{\"amount\":100000,\"spendInfoHash\":\"b9129f5c77e8fb6815982d917834177270480610eb01f619062e558cb20912d4\"},{\"amount\":100000,\"spendInfoHash\":\"4e996b2b952038be26446bc6722327d349999e2b1e882fd5b4b0101a693dea34\"}],\"specification\":\"0.1.0\"}",
+      "spendInfoStrings": {
+        "4e996b2b952038be26446bc6722327d349999e2b1e882fd5b4b0101a693dea34":
+          "{\"proofInputAddress\":\"msSDeL7vz8AcbLSsiDT3tyRX2eF76ppqbd\",\"specification\":\"0.1.0\",\"verificationPlatform\":\"bitcoin-testnet\"}"
+      },
+      "txId": "da37bd10eca857f871bea23b67d8d7d1456156ce169ea0a2ec3c47598e985acb"
+    }
+  },
+  "xspoctTransactions": {},
+  "current": { "burnTransactionAddress": "mwj2rf9JZHVypkUVhBTapbDvCAr5xVtJQ3" },
+  "next": {
+    "proofInputAddress": "msSDeL7vz8AcbLSsiDT3tyRX2eF76ppqbd",
+    "proofInputPrivateKey":
+      "63f827fe9539d738a0bff259f1bef739a2ff924323628003ddd4d5d3696c704e"
+  },
+  "amount": 100000
+}

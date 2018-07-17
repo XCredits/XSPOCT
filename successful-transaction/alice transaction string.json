@@ -1,0 +1,18 @@
+{
+  "outputs": [
+    {
+      "amount": 100000,
+      "spendInfoHash":
+        "960d62956b92ad03ff2c2fec99de0d742530a30f434fe08b9d386daff60aa0f4"
+    }
+  ],
+  "specification": "0.1.0",
+  "changeAddresses": {
+    "mt1rAf391uQXAQLuRCNU1evXMSCPZsJ4qM": {
+      "message":
+        "960d62956b92ad03ff2c2fec99de0d742530a30f434fe08b9d386daff60aa0f4",
+      "signature":
+        "5d8fd921e4780c8b10caae5e486a5b079260dfad3a8281d93933cec0d10673314564044ad44ccc275015a3ab2fb4a2f375ed6c55a470d9dcb0286c81394d9214"
+    }
+  }
+}

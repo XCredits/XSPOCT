@@ -1,1 +1,53 @@
-{"address":"mwj2rf9JZHVypkUVhBTapbDvCAr5xVtJQ3","outputsPrivate":[{"amount":100000,"proofInputPrivateKey":"7b2f582d69f818d6e0388b83b0807d212714d7bdb1afa794fb44722841b70812","inputProofPublicKey":"02c6661e6fb6ff9a0618324e73607160ca2b370f119debbcb57e6967410ac0159f","proofInputAddress":"mpMCfPJXfxjc9QxkzL1p3TFtKth385XCCe","spendInfoString":"{\"proofInputAddress\":\"mpMCfPJXfxjc9QxkzL1p3TFtKth385XCCe\",\"specification\":\"0.1.0\",\"verificationPlatform\":\"bitcoin-testnet\"}","spendInfoHash":"b9129f5c77e8fb6815982d917834177270480610eb01f619062e558cb20912d4"},{"amount":100000,"proofInputPrivateKey":"63f827fe9539d738a0bff259f1bef739a2ff924323628003ddd4d5d3696c704e","inputProofPublicKey":"03fd52c07c4b0c09817ee256f01da9cc6ea06593b8e691be2aa72c7ead0f058cd2","proofInputAddress":"msSDeL7vz8AcbLSsiDT3tyRX2eF76ppqbd","spendInfoString":"{\"proofInputAddress\":\"msSDeL7vz8AcbLSsiDT3tyRX2eF76ppqbd\",\"specification\":\"0.1.0\",\"verificationPlatform\":\"bitcoin-testnet\"}","spendInfoHash":"4e996b2b952038be26446bc6722327d349999e2b1e882fd5b4b0101a693dea34"}],"object":{"source":{"utxo":"a23420bf69ad5948bddf61232181e2e1f0df51e5230107679051aa96f39c3ce5","platform":"bitcoin-testnet"},"outputs":[{"amount":100000,"spendInfoHash":"b9129f5c77e8fb6815982d917834177270480610eb01f619062e558cb20912d4"},{"amount":100000,"spendInfoHash":"4e996b2b952038be26446bc6722327d349999e2b1e882fd5b4b0101a693dea34"}],"specification":"0.1.0"},"string":"{\"source\":{\"utxo\":\"a23420bf69ad5948bddf61232181e2e1f0df51e5230107679051aa96f39c3ce5\",\"platform\":\"bitcoin-testnet\"},\"outputs\":[{\"amount\":100000,\"spendInfoHash\":\"b9129f5c77e8fb6815982d917834177270480610eb01f619062e558cb20912d4\"},{\"amount\":100000,\"spendInfoHash\":\"4e996b2b952038be26446bc6722327d349999e2b1e882fd5b4b0101a693dea34\"}],\"specification\":\"0.1.0\"}","hash":"b1cacff76cb9f4e63f25cf298b49c67ad07127c25fa62be09e50cde877f7a4a9","txId":"da37bd10eca857f871bea23b67d8d7d1456156ce169ea0a2ec3c47598e985acb"}
+{
+  "address": "mwj2rf9JZHVypkUVhBTapbDvCAr5xVtJQ3",
+  "outputsPrivate": [
+    {
+      "amount": 100000,
+      "proofInputPrivateKey":
+        "7b2f582d69f818d6e0388b83b0807d212714d7bdb1afa794fb44722841b70812",
+      "inputProofPublicKey":
+        "02c6661e6fb6ff9a0618324e73607160ca2b370f119debbcb57e6967410ac0159f",
+      "proofInputAddress": "mpMCfPJXfxjc9QxkzL1p3TFtKth385XCCe",
+      "spendInfoString":
+        "{\"proofInputAddress\":\"mpMCfPJXfxjc9QxkzL1p3TFtKth385XCCe\",\"specification\":\"0.1.0\",\"verificationPlatform\":\"bitcoin-testnet\"}",
+      "spendInfoHash":
+        "b9129f5c77e8fb6815982d917834177270480610eb01f619062e558cb20912d4"
+    },
+    {
+      "amount": 100000,
+      "proofInputPrivateKey":
+        "63f827fe9539d738a0bff259f1bef739a2ff924323628003ddd4d5d3696c704e",
+      "inputProofPublicKey":
+        "03fd52c07c4b0c09817ee256f01da9cc6ea06593b8e691be2aa72c7ead0f058cd2",
+      "proofInputAddress": "msSDeL7vz8AcbLSsiDT3tyRX2eF76ppqbd",
+      "spendInfoString":
+        "{\"proofInputAddress\":\"msSDeL7vz8AcbLSsiDT3tyRX2eF76ppqbd\",\"specification\":\"0.1.0\",\"verificationPlatform\":\"bitcoin-testnet\"}",
+      "spendInfoHash":
+        "4e996b2b952038be26446bc6722327d349999e2b1e882fd5b4b0101a693dea34"
+    }
+  ],
+  "object": {
+    "source": {
+      "utxo":
+        "a23420bf69ad5948bddf61232181e2e1f0df51e5230107679051aa96f39c3ce5",
+      "platform": "bitcoin-testnet"
+    },
+    "outputs": [
+      {
+        "amount": 100000,
+        "spendInfoHash":
+          "b9129f5c77e8fb6815982d917834177270480610eb01f619062e558cb20912d4"
+      },
+      {
+        "amount": 100000,
+        "spendInfoHash":
+          "4e996b2b952038be26446bc6722327d349999e2b1e882fd5b4b0101a693dea34"
+      }
+    ],
+    "specification": "0.1.0"
+  },
+  "string":
+    "{\"source\":{\"utxo\":\"a23420bf69ad5948bddf61232181e2e1f0df51e5230107679051aa96f39c3ce5\",\"platform\":\"bitcoin-testnet\"},\"outputs\":[{\"amount\":100000,\"spendInfoHash\":\"b9129f5c77e8fb6815982d917834177270480610eb01f619062e558cb20912d4\"},{\"amount\":100000,\"spendInfoHash\":\"4e996b2b952038be26446bc6722327d349999e2b1e882fd5b4b0101a693dea34\"}],\"specification\":\"0.1.0\"}",
+  "hash": "b1cacff76cb9f4e63f25cf298b49c67ad07127c25fa62be09e50cde877f7a4a9",
+  "txId": "da37bd10eca857f871bea23b67d8d7d1456156ce169ea0a2ec3c47598e985acb"
+}

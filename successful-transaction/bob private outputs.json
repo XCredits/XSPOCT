@@ -1,0 +1,12 @@
+{
+  "amount": 100000,
+  "proofInputPrivateKey":
+    "fd4bfb17cb53a06493e11de7e48b1d867f5ceda27eb7df0f877ba5d39ab66671",
+  "inputProofPublicKey":
+    "03b55003f9365f90731b8e04f8aa55600b5732b0170ff8ef50253c0be906a18c84",
+  "proofInputAddress": "mvSvTT9w64rA6pmGsehbNtrEUytR6p9iyT",
+  "spendInfoString":
+    "{\"proofInputAddress\":\"mvSvTT9w64rA6pmGsehbNtrEUytR6p9iyT\",\"specification\":\"0.1.0\",\"verificationPlatform\":\"bitcoin-testnet\"}",
+  "spendInfoHash":
+    "960d62956b92ad03ff2c2fec99de0d742530a30f434fe08b9d386daff60aa0f4"
+}
