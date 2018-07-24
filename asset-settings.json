@@ -1,0 +1,8 @@
+{
+  "name": "FakeUSD",
+  "description": "FakeUSD is a token that is redemable for US Dollars by presenting ownership of a FakeUSD token to a Fake Bank branch.",
+  "supply": 40000000,
+  "precision": 2,
+  "publicKey": "publicKey",
+  "validatePublicKey": true
+}

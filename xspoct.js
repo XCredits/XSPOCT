@@ -18,7 +18,9 @@ if (typeof Buffer === 'undefined') {
 
 module.exports = {
   generateAndBroadcastBurnTransaction,
+  generateAndBroadcastAssetBurnTransaction,
   generateBurnTransaction,
+  generateAssetBurnTransaction,
   generateSingleOutput,
   generateBurnAddressFromHash,
   transferXspoct,
@@ -112,6 +114,93 @@ function generateAndBroadcastBurnTransaction(
   });
 }
 
+
+/**
+ *
+ * @param {*} assetSettings
+ * @param {*} chainTransactionAmount Should be small, as it is simply a proof transaction
+ * @param {*} fee
+ * @param {*} outputAmounts
+ * @param {*} inputPrivateKey
+ * @param {*} changeAddress
+ * @param {*} networkName
+ * @param {*} callback
+ */
+function generateAndBroadcastAssetBurnTransaction(
+    assetSettings,
+    chainTransactionAmount,
+    fee,
+    outputAmounts,
+    inputPrivateKey,
+    changeAddress,
+    networkName,
+    callback) {
+  let insightUrl;
+  let bitcoreNetwork;
+  if (networkName === 'testnet') {
+    insightUrl = 'https://test-insight.bitpay.com';
+    bitcoreNetwork = bitcore.Networks.testnet;
+  } else if (networkName === 'livenet') {
+    insightUrl = 'https://insight.bitpay.com';
+    bitcoreNetwork = bitcore.Networks.livenet;
+  } else {
+    throw new Error('Network name not found.');
+  }
+  const insight = new Insight(insightUrl);
+
+  const privateKeyBitcore = new bitcore.PrivateKey(inputPrivateKey);
+  const publicKeyBitcore = privateKeyBitcore.toPublicKey();
+  const addressBitcore = publicKeyBitcore.toAddress(bitcoreNetwork);
+
+  insight.getUnspentUtxos(addressBitcore, function(err, utxos) {
+    if (err) {
+      return callback(err);
+    } else if (utxos.length === 0) {
+      return callback('No utxo found for corresponding key');
+    } else if (utxos.length > 1) {
+      return callback('More than 1 utxo found for corresponding key. Note that this requirement will removed in the future.');
+    } else {
+      const utxo = utxos[0];
+      const burnTransaction = generateAssetBurnTransaction(
+          assetSettings,
+          chainTransactionAmount,
+          outputAmounts,
+          networkName);
+
+      const bitcoreTransaction = new bitcore.Transaction()
+          .from(utxo)
+          .to(burnTransaction.address, chainTransactionAmount)
+          .fee(fee)
+          .change(changeAddress)
+          .sign(inputPrivateKey);
+
+      insight.broadcast(bitcoreTransaction.serialize(),
+          function(err, txId) {
+        if (err) {
+          return callback(err);
+        } else {
+          burnTransaction.txId = txId;
+          let xspoctNotes = [];
+          burnTransaction.outputsPrivate.forEach(function(output) {
+            // generate an XSPOCT note for each output
+            const xn = generateXspoctNoteFromBurnTransaction(
+                burnTransaction.address,
+                burnTransaction.string,
+                output.proofInputAddress,
+                output.spendInfoString,
+                output.proofInputPrivateKey,
+                output.amount,
+                burnTransaction.txId);
+            xspoctNotes.push(xn);
+          });
+          return callback(undefined, {burnTransaction, xspoctNotes});
+        }
+      });
+    }
+  });
+}
+
+
 /**
  *
  * @param {*} utxoId
@@ -135,6 +224,48 @@ function generateBurnTransaction(
       utxo: utxoId,
       platform: 'bitcoin-' + networkName,
     },
+    outputs: outputsForTransaction,
+    specification: globalSpecification,
+  };
+  const burnTransactionString = JSON.stringify(burnTransaction);
+
+  const burnTransactionHash = sha256Plus(Buffer.from(burnTransactionString));
+
+  const address =
+      generateBurnAddressFromHash(burnTransactionHash, networkName);
+  if (!bitcore.Address.isValid(address)) {
+    throw new Error('\n Error: Address failed to generate \n');
+  }
+
+  return {
+      address,
+      outputsPrivate,
+      object: burnTransaction, // Data about where outputs will go
+      string: burnTransactionString,
+      hash: burnTransactionHash,
+  };
+}
+
+/**
+ *
+ * @param {*} assetSettings
+ * @param {*} amount
+ * @param {*} outputAmounts
+ * @param {*} networkName
+ * @return {object} Burn transaction information
+ */
+function generateAssetBurnTransaction(
+    assetSettings,
+    amount,
+    outputAmounts,
+    networkName
+  ) {
+  const {outputsPrivate, outputsForTransaction} =
+      generateOutputs(assetSettings.supply, outputAmounts, networkName);
+
+  // Generate burn transaction on Bitcoin
+  const burnTransaction = {
+    asset: assetSettings,
     outputs: outputsForTransaction,
     specification: globalSpecification,
   };
@@ -516,7 +647,7 @@ function addOutputsToXspoctNote(xspoctNote, outputsForTransaction,
 
   // Generate a change address for the transaction
   const changeAddress = singleAddress(networkName);
-  
+
   // Sign the spendInfoHash
   // The purpose of signing of an output is to ensure that the change address
   // is not another burn address. The messgae can be any string, but we use this
