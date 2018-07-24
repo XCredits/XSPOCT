@@ -1,81 +1,79 @@
-
 C:\Users\James Jansson\Documents\GitKraken\XSPOCT>node step-2-generate-fee-addresses.js
-{"privateKey":"64301426d565ed1b7921b1258c015865c99e3110dfb123461434a1329a28d8b2"}
-64301426d565ed1b7921b1258c015865c99e3110dfb123461434a1329a28d8b2
-Address: <Address: mhYui9xEgPy41y7EWgE2LiNFfqv1xVeJzR, type: pubkeyhash, network: testnet>
-(node:19488) [DEP0079] DeprecationWarning: Custom inspection function on Objects via .inspect() is deprecated
-[ <UnspentOutput: abdb1692d25e796e79b71d6a88c55c105e44d141010540e89b327f5fc7eb2325:3, satoshis: 105792000, address: mhYui9xEgPy41y7EWgE2LiNFfqv1xVeJzR> ]
-<Transaction: 01000000012523ebc75f7f329be840050141d1445e105cc5886a1db7796e795ed29216dbab030000006b483045022100e80ed9a895fa759daadb4529e5f0f6e1888ff4eec8f3f03b52b31700a3b5982802204906d005028d84e827f6004f8109bf01a98f17cbcc764210fa46c6b7a5e0ae01012102ce375e7843840f0b8fb8b3d7555a06038bc351b4b9715a1b19cf74fa318d80e3ffffffff0454120300000000001976a914b8d36e5d7eaad6a0a5a1654f2816d4e9c36cc24888ac10270000000000001976a91435ee4b8ea4f6104388f3233f064b252cbcb06e7288ac10270000000000001976a9146796744c87e200956068a34c7d720853e44e79d388ac78dc4a06000000001976a914197e314d5f4d3e7d6f0578a7d939cccfb607ef9588ac00000000>
-e31e5fd558e66d30f9d3107b44769e2071ff78c643be5571956bb9fcb5aa9d6c
+{"privateKey":"62f143549461d82fc2689871ee48e5563d1a539f4fe408469d4055cfdb273cd0"}
+62f143549461d82fc2689871ee48e5563d1a539f4fe408469d4055cfdb273cd0
+Address: <Address: mgdNJd6gwFyXMaoEZ67Ci5QcnDkJUpjCie, type: pubkeyhash, network: testnet>
+(node:30620) [DEP0079] DeprecationWarning: Custom inspection function on Objects via .inspect() is deprecated
+[ <UnspentOutput: 3b042421457930662e73858db1e7d4f2f025106f343a830e37e2919862aeb2ec:3, satoshis: 105346800, address: mgdNJd6gwFyXMaoEZ67Ci5QcnDkJUpjCie> ]
+<Transaction: 0100000001ecb2ae629891e2370e833a346f1025f0f2d4e7b18d85732e663079452124043b030000006b48304502210093196d60c4c88b733478d982735d5c794b22820789c9ec428f5ff19b273802aa0220331acdca366c42f6989125c7323dae25a1b45aa92b2b8fb69a7424359038996f01210229ae5c4b84200f8e1e4d7d687d1a346cae98368e334a64a805a7edb280db3d14ffffffff0454120300000000001976a9145bab0f5fe2774b1cafa979d29f557d07da2ab6cf88ac10270000000000001976a914904c42944feb824938f04ccffc05b33516e1a6f688ac10270000000000001976a9142d32e3df6c1108a67751f8f2a2bf83fbfad7fd5188ac68114406000000001976a914375d99a2b9faf50a70fc5f66807787a4cabcbe4888ac00000000>
+18a9b3d156d7f74bfb2b9276dca6fc7f0d4061e197b0533687e082ef3ecddf52
 
 C:\Users\James Jansson\Documents\GitKraken\XSPOCT>node create-and-send-xspoct-asset.js
-{ change: '66191a38656bd26d75bf09bf78963f9e4665846a323d7c4ceed73cc275351c42',
-  aliceBurnSource: 'd9c93a5db8f427dae57ae79c3dc4041d1ac2a20a5ecfaf4438abb66b42cdc700',
-  aliceFeeSource: '4126cf956406f0f119d747a948a3b4ea91f1da937ce6bcfa47acfc690a0f3325',
-  bobFeeSource: '7f5458ecbfb00a4700e1cfd2a79891cb3621cb8b74e94fc954ecd8808b3e65a6' }
+{ change: '92a15a231cdd64db67447576e4c46801e5661060fd5f9d12a51ed4e55af84442',
+  aliceBurnSource: 'b1bdb22f9b58c5795706fddaf1d933b921cbba28afaf8a3e3b406d771258c609',
+  aliceFeeSource: 'c0bce758c739ff9cf35c218557cdb4e3ace13d6c20552131a0774cdd297cfb72',
+  bobFeeSource: '11c7861af240cd786e7dab854fd277d027a77291e341a4449e60caa35b7825c6' }
 burnTransaction
-{ address: 'mobraW1vUafk9wYBtCPQw3CNqVj4Mjy9XJ',
+{ address: 'mz4YzqzekaLHrTe6QaADKyB5p8fTofPq5v',
   outputsPrivate:
    [ { amount: 20000,
-       proofInputPrivateKey: '62c9967d474aa761e907f1ebb6995ec41d486e21841b762ccfc499d7b296936d',
-       inputProofPublicKey: '035ee88e68b62cf1cecb9a3713e19a4aa4ddb2be9ba70e197411e075817ec22d5a',
-       proofInputAddress: 'n2exWPfsSsrLfgmVD9R6grbgpWh6KGtjGM',
-       spendInfoString: '{"proofInputAddress":"n2exWPfsSsrLfgmVD9R6grbgpWh6KGtjGM","specification":"0.1.0","verificationPlatform":"bitcoin-testnet"}',
-       spendInfoHash: '4ecd3de13b389108d9d97a067b5985fc1884724b60c76c3c8dfbeb75d591efeb' },
+       proofInputPrivateKey: '8d8806414005f51fb9c45e5b4a79136b8d597817152927369c74c22e515d2ad7',
+       inputProofPublicKey: '03a2e680382c0d5751224c65c4f3e4835e4ce0a8cb779145c87386eb366fc07d08',
+       proofInputAddress: 'mo8AiR6KZqEqjMENZPG8UW4Wt5PzbzPoPy',
+       spendInfoString: '{"proofInputAddress":"mo8AiR6KZqEqjMENZPG8UW4Wt5PzbzPoPy","specification":"0.1.0","verificationPlatform":"bitcoin-testnet"}',
+       spendInfoHash: 'c52d30fbbb7c3e59c57f7ca1c6174331b7dcae91258eee20f59f5dae42baf8aa' },
      { amount: 39980000,
-       proofInputPrivateKey: '4b933e487fb5f5d0ca869f95452d412232dbf80ae98995991d16452bfe55ac51',
-       inputProofPublicKey: '03e53077f383ca560d07530b27100efce308cc30f7803331ecf232d46b6c781773',
-       proofInputAddress: 'mk2odhqsCx2vyWQ5jSP4795mkERu1BqVkW',
-       spendInfoString: '{"proofInputAddress":"mk2odhqsCx2vyWQ5jSP4795mkERu1BqVkW","specification":"0.1.0","verificationPlatform":"bitcoin-testnet"}',
-       spendInfoHash: '068914ae5bfbad53388f76dd7efa8e5ce9e949c190b5ed278cbc93ac9caa914a' } ],
+       proofInputPrivateKey: '86f16cde78041938201e104fcd9fcdb7784547e9fc6ad4534d4e987de48df43d',
+       inputProofPublicKey: '0385d2bded3eeca095c7817fa29ab426a59b4e4d20183d03ca620834ad6448f6c4',
+       proofInputAddress: 'mq8ptVMkxd52btURyfu2HRYNsFTDtuNtoP',
+       spendInfoString: '{"proofInputAddress":"mq8ptVMkxd52btURyfu2HRYNsFTDtuNtoP","specification":"0.1.0","verificationPlatform":"bitcoin-testnet"}',
+       spendInfoHash: '40c584918607c85a38c2137851b9181fe8a4590e667977a40ddc0e9dfb8ebc92' } ],
   object:
    { asset:
       { name: 'FakeUSD',
         description: 'FakeUSD is a token that is redemable for US Dollars by presenting ownership of a FakeUSD token to a Fake Bank branch.',
         supply: 40000000,
         precision: 2,
-        publicKey: 'publicKey',
         validatePublicKey: true },
      outputs:
       [ { amount: 20000,
-          spendInfoHash: '4ecd3de13b389108d9d97a067b5985fc1884724b60c76c3c8dfbeb75d591efeb' },
+          spendInfoHash: 'c52d30fbbb7c3e59c57f7ca1c6174331b7dcae91258eee20f59f5dae42baf8aa' },
         { amount: 39980000,
-          spendInfoHash: '068914ae5bfbad53388f76dd7efa8e5ce9e949c190b5ed278cbc93ac9caa914a' } ],
+          spendInfoHash: '40c584918607c85a38c2137851b9181fe8a4590e667977a40ddc0e9dfb8ebc92' } ],
      specification: '0.1.0' },
-  string: '{"asset":{"name":"FakeUSD","description":"FakeUSD is a token that is redemable for US Dollars by presenting ownership of a FakeUSD token to a Fake Bank branch.","supply":40000000,"precision":2,"publicKey":"publicKey","validatePublicKey":true},"outputs":[{"amount":20000,"spendInfoHash":"4ecd3de13b389108d9d97a067b5985fc1884724b60c76c3c8dfbeb75d591efeb"},{"amount":39980000,"spendInfoHash":"068914ae5bfbad53388f76dd7efa8e5ce9e949c190b5ed278cbc93ac9caa914a"}],"specification":"0.1.0"}',
-  hash: '58ae507248f6d604b3962e4642ac3d914d111c7a9f4c00115fa4cd7b0ddde8f7',
-  txId: '1ab98d4a55f8960c450dc412dee17210c5d618730038d6245732c8e1796a8e5b' }
+  string: '{"asset":{"name":"FakeUSD","description":"FakeUSD is a token that is redemable for US Dollars by presenting ownership of a FakeUSD token to a Fake Bank branch.","supply":40000000,"precision":2,"validatePublicKey":true},"outputs":[{"amount":20000,"spendInfoHash":"c52d30fbbb7c3e59c57f7ca1c6174331b7dcae91258eee20f59f5dae42baf8aa"},{"amount":39980000,"spendInfoHash":"40c584918607c85a38c2137851b9181fe8a4590e667977a40ddc0e9dfb8ebc92"}],"specification":"0.1.0"}',
+  hash: 'cb6c20b6442862849c29a04e46f93ade719da6378c4e31a61c3fdf23460a1478',
+  txId: '4c41fbc93e8784682c431565f01dd5403f5b011b1acc84e0c0f1a4c11d20af8b' }
 
 
 Alice's XSPOCT Note: 1
 { burnTransactions:
-   { mobraW1vUafk9wYBtCPQw3CNqVj4Mjy9XJ:
-      { transactionString: '{"asset":{"name":"FakeUSD","description":"FakeUSD is a token that is redemable for US Dollars by presenting ownership of a FakeUSD token to a Fake Bank branch.","supply":40000000,"precision":2,"publicKey":"publicKey","validatePublicKey":true},"outputs":[{"amount":20000,"spendInfoHash":"4ecd3de13b389108d9d97a067b5985fc1884724b60c76c3c8dfbeb75d591efeb"},{"amount":39980000,"spendInfoHash":"068914ae5bfbad53388f76dd7efa8e5ce9e949c190b5ed278cbc93ac9caa914a"}],"specification":"0.1.0"}',
+   { mz4YzqzekaLHrTe6QaADKyB5p8fTofPq5v:
+      { transactionString: '{"asset":{"name":"FakeUSD","description":"FakeUSD is a token that is redemable for US Dollars by presenting ownership of a FakeUSD token to a Fake Bank branch.","supply":40000000,"precision":2,"validatePublicKey":true},"outputs":[{"amount":20000,"spendInfoHash":"c52d30fbbb7c3e59c57f7ca1c6174331b7dcae91258eee20f59f5dae42baf8aa"},{"amount":39980000,"spendInfoHash":"40c584918607c85a38c2137851b9181fe8a4590e667977a40ddc0e9dfb8ebc92"}],"specification":"0.1.0"}',
         spendInfoStrings:
-         { '4ecd3de13b389108d9d97a067b5985fc1884724b60c76c3c8dfbeb75d591efeb': '{"proofInputAddress":"n2exWPfsSsrLfgmVD9R6grbgpWh6KGtjGM","specification":"0.1.0","verificationPlatform":"bitcoin-testnet"}' },
-        txId: '1ab98d4a55f8960c450dc412dee17210c5d618730038d6245732c8e1796a8e5b' } },
+         { c52d30fbbb7c3e59c57f7ca1c6174331b7dcae91258eee20f59f5dae42baf8aa: '{"proofInputAddress":"mo8AiR6KZqEqjMENZPG8UW4Wt5PzbzPoPy","specification":"0.1.0","verificationPlatform":"bitcoin-testnet"}' },
+        txId: '4c41fbc93e8784682c431565f01dd5403f5b011b1acc84e0c0f1a4c11d20af8b' } },
   xspoctTransactions: {},
   current:
-   { burnTransactionAddress: 'mobraW1vUafk9wYBtCPQw3CNqVj4Mjy9XJ' },
+   { burnTransactionAddress: 'mz4YzqzekaLHrTe6QaADKyB5p8fTofPq5v' },
   next:
-   { proofInputAddress: 'n2exWPfsSsrLfgmVD9R6grbgpWh6KGtjGM',
-     proofInputPrivateKey: '62c9967d474aa761e907f1ebb6995ec41d486e21841b762ccfc499d7b296936d' },
+   { proofInputAddress: 'mo8AiR6KZqEqjMENZPG8UW4Wt5PzbzPoPy',
+     proofInputPrivateKey: '8d8806414005f51fb9c45e5b4a79136b8d597817152927369c74c22e515d2ad7' },
   amount: 20000 }
 
 
 Alice's XSPOCT Note: 2
 { burnTransactions:
-   { mobraW1vUafk9wYBtCPQw3CNqVj4Mjy9XJ:
-      { transactionString: '{"asset":{"name":"FakeUSD","description":"FakeUSD is a token that is redemable for US Dollars by presenting ownership of a FakeUSD token to a Fake Bank branch.","supply":40000000,"precision":2,"publicKey":"publicKey","validatePublicKey":true},"outputs":[{"amount":20000,"spendInfoHash":"4ecd3de13b389108d9d97a067b5985fc1884724b60c76c3c8dfbeb75d591efeb"},{"amount":39980000,"spendInfoHash":"068914ae5bfbad53388f76dd7efa8e5ce9e949c190b5ed278cbc93ac9caa914a"}],"specification":"0.1.0"}',
+   { mz4YzqzekaLHrTe6QaADKyB5p8fTofPq5v:
+      { transactionString: '{"asset":{"name":"FakeUSD","description":"FakeUSD is a token that is redemable for US Dollars by presenting ownership of a FakeUSD token to a Fake Bank branch.","supply":40000000,"precision":2,"validatePublicKey":true},"outputs":[{"amount":20000,"spendInfoHash":"c52d30fbbb7c3e59c57f7ca1c6174331b7dcae91258eee20f59f5dae42baf8aa"},{"amount":39980000,"spendInfoHash":"40c584918607c85a38c2137851b9181fe8a4590e667977a40ddc0e9dfb8ebc92"}],"specification":"0.1.0"}',
         spendInfoStrings:
-         { '068914ae5bfbad53388f76dd7efa8e5ce9e949c190b5ed278cbc93ac9caa914a': '{"proofInputAddress":"mk2odhqsCx2vyWQ5jSP4795mkERu1BqVkW","specification":"0.1.0","verificationPlatform":"bitcoin-testnet"}' },
-        txId: '1ab98d4a55f8960c450dc412dee17210c5d618730038d6245732c8e1796a8e5b' } },
+         { '40c584918607c85a38c2137851b9181fe8a4590e667977a40ddc0e9dfb8ebc92': '{"proofInputAddress":"mq8ptVMkxd52btURyfu2HRYNsFTDtuNtoP","specification":"0.1.0","verificationPlatform":"bitcoin-testnet"}' },
+        txId: '4c41fbc93e8784682c431565f01dd5403f5b011b1acc84e0c0f1a4c11d20af8b' } },
   xspoctTransactions: {},
   current:
-   { burnTransactionAddress: 'mobraW1vUafk9wYBtCPQw3CNqVj4Mjy9XJ' },
+   { burnTransactionAddress: 'mz4YzqzekaLHrTe6QaADKyB5p8fTofPq5v' },
   next:
-   { proofInputAddress: 'mk2odhqsCx2vyWQ5jSP4795mkERu1BqVkW',
-     proofInputPrivateKey: '4b933e487fb5f5d0ca869f95452d412232dbf80ae98995991d16452bfe55ac51' },
+   { proofInputAddress: 'mq8ptVMkxd52btURyfu2HRYNsFTDtuNtoP',
+     proofInputPrivateKey: '86f16cde78041938201e104fcd9fcdb7784547e9fc6ad4534d4e987de48df43d' },
   amount: 39980000 }
 Check if the burn transaction is processed.
 Transaction found!
@@ -87,27 +85,27 @@ Bob generates an output address
 Bob's private output data:
 
 { amount: 20000,
-  proofInputPrivateKey: '5fcd0562792a1a147f0136c837788f884066a95245ceff45fc1b965652a3204b',
-  inputProofPublicKey: '02e98f620c5fcc12626f8b38b7d1b6c57151200060b135bd25fc78b0c043816140',
-  proofInputAddress: 'n4W9HFwx2C59G7LWhH8aakJMUCZPTLw7e4',
-  spendInfoString: '{"proofInputAddress":"n4W9HFwx2C59G7LWhH8aakJMUCZPTLw7e4","specification":"0.1.0","verificationPlatform":"bitcoin-testnet"}',
-  spendInfoHash: 'da6765795fc67c02226d5ab8e64a8ad2f742b2358bd434bf94a58dbe7688a7d1' }
+  proofInputPrivateKey: '583bbc035fe1b2e5f210b6434fe43b6c5e99f864fb3bd960f3a8e222215984e6',
+  inputProofPublicKey: '03d016db4e0d535b79b6f26919f9baecf3586cc283fa8243c97841d43cf3ad9d56',
+  proofInputAddress: 'mqi6zQejQdD7EJRwgqfL7j87BJWNqwyZrb',
+  spendInfoString: '{"proofInputAddress":"mqi6zQejQdD7EJRwgqfL7j87BJWNqwyZrb","specification":"0.1.0","verificationPlatform":"bitcoin-testnet"}',
+  spendInfoHash: 'e0b3b4c23b35f97f5835e9ac3b06942c8e638a9cceceefd9667ead4ba1f2b847' }
 
 
 Bob sends to Alice (outputForTransaction):
 
 { amount: 20000,
-  spendInfoHash: 'da6765795fc67c02226d5ab8e64a8ad2f742b2358bd434bf94a58dbe7688a7d1' }
+  spendInfoHash: 'e0b3b4c23b35f97f5835e9ac3b06942c8e638a9cceceefd9667ead4ba1f2b847' }
 
 
 
 Alice adds the output string to the XSPOCT note and enters proof on the blockchain
 
 utxo
-<UnspentOutput: e31e5fd558e66d30f9d3107b44769e2071ff78c643be5571956bb9fcb5aa9d6c:1, satoshis: 10000, address: mkS7aFv9cnobXzXUubmgwwMypdxnvdDHTs>
+<UnspentOutput: 18a9b3d156d7f74bfb2b9276dca6fc7f0d4061e197b0533687e082ef3ecddf52:1, satoshis: 10000, address: mtfvxKYZUCyUkuFE27anpTAvTooBd3yUMT>
 
 proofInputAddress
-n2exWPfsSsrLfgmVD9R6grbgpWh6KGtjGM
+mo8AiR6KZqEqjMENZPG8UW4Wt5PzbzPoPy
 
 chargeUpTransactionAmount
 8700
@@ -116,48 +114,48 @@ chainTransactionFee
 1300
 
 inputAddressBitcore
-<Address: mkS7aFv9cnobXzXUubmgwwMypdxnvdDHTs, type: pubkeyhash, network: testnet>
+<Address: mtfvxKYZUCyUkuFE27anpTAvTooBd3yUMT, type: pubkeyhash, network: testnet>
 
 chainTransactionInputPrivateKey
-4126cf956406f0f119d747a948a3b4ea91f1da937ce6bcfa47acfc690a0f3325
-(node:24868) [DEP0079] DeprecationWarning: Custom inspection function on Objects via .inspect() is deprecated
+c0bce758c739ff9cf35c218557cdb4e3ace13d6c20552131a0774cdd297cfb72
+(node:36024) [DEP0079] DeprecationWarning: Custom inspection function on Objects via .inspect() is deprecated
 
 utxo
-<UnspentOutput: a32dc88d48c197535f392140062d7a6bc053b27101f25e763d96b23441102d1c:0, satoshis: 8700, address: n2exWPfsSsrLfgmVD9R6grbgpWh6KGtjGM>
+<UnspentOutput: b35a4d29c23ed4467953ad3685bb5fad2c1ddf0331cd319e32d62cab69e8f406:0, satoshis: 8700, address: mo8AiR6KZqEqjMENZPG8UW4Wt5PzbzPoPy>
 
 proofBurnAddress
-n4CNC5M8RHfhXmi4yfHL2CFw5xNwC95Ea2
+msJSM3wvcWzYLxHKCkERKCpQUupoiRo8An
 
 microtransactionAmount
-1336
+760
 
 chainTransactionFee
 1300
 
 changeAddress
-mzWBZfhbKrtzLMw5JRs3ok9tawV7D91ZkU
+n3wLN9KQh8HeLNy4tkcFB4GPauWaj8r9Nd
 
  xspoctNote.next.proofInputPrivateKey
-62c9967d474aa761e907f1ebb6995ec41d486e21841b762ccfc499d7b296936d
+8d8806414005f51fb9c45e5b4a79136b8d597817152927369c74c22e515d2ad7
 
 Alice sends Bob this XSPOCT note:
 
 { burnTransactions:
-   { mobraW1vUafk9wYBtCPQw3CNqVj4Mjy9XJ:
-      { transactionString: '{"asset":{"name":"FakeUSD","description":"FakeUSD is a token that is redemable for US Dollars by presenting ownership of a FakeUSD token to a Fake Bank branch.","supply":40000000,"precision":2,"publicKey":"publicKey","validatePublicKey":true},"outputs":[{"amount":20000,"spendInfoHash":"4ecd3de13b389108d9d97a067b5985fc1884724b60c76c3c8dfbeb75d591efeb"},{"amount":39980000,"spendInfoHash":"068914ae5bfbad53388f76dd7efa8e5ce9e949c190b5ed278cbc93ac9caa914a"}],"specification":"0.1.0"}',
+   { mz4YzqzekaLHrTe6QaADKyB5p8fTofPq5v:
+      { transactionString: '{"asset":{"name":"FakeUSD","description":"FakeUSD is a token that is redemable for US Dollars by presenting ownership of a FakeUSD token to a Fake Bank branch.","supply":40000000,"precision":2,"validatePublicKey":true},"outputs":[{"amount":20000,"spendInfoHash":"c52d30fbbb7c3e59c57f7ca1c6174331b7dcae91258eee20f59f5dae42baf8aa"},{"amount":39980000,"spendInfoHash":"40c584918607c85a38c2137851b9181fe8a4590e667977a40ddc0e9dfb8ebc92"}],"specification":"0.1.0"}',
         spendInfoStrings:
-         { '4ecd3de13b389108d9d97a067b5985fc1884724b60c76c3c8dfbeb75d591efeb': '{"proofInputAddress":"n2exWPfsSsrLfgmVD9R6grbgpWh6KGtjGM","specification":"0.1.0","verificationPlatform":"bitcoin-testnet"}' },
-        txId: '1ab98d4a55f8960c450dc412dee17210c5d618730038d6245732c8e1796a8e5b' } },
+         { c52d30fbbb7c3e59c57f7ca1c6174331b7dcae91258eee20f59f5dae42baf8aa: '{"proofInputAddress":"mo8AiR6KZqEqjMENZPG8UW4Wt5PzbzPoPy","specification":"0.1.0","verificationPlatform":"bitcoin-testnet"}' },
+        txId: '4c41fbc93e8784682c431565f01dd5403f5b011b1acc84e0c0f1a4c11d20af8b' } },
   xspoctTransactions:
-   { n2exWPfsSsrLfgmVD9R6grbgpWh6KGtjGM:
-      { transactionString: '{"outputs":[{"amount":20000,"spendInfoHash":"da6765795fc67c02226d5ab8e64a8ad2f742b2358bd434bf94a58dbe7688a7d1"}],"specification":"0.1.0","changeAddresses":{"mzWBZfhbKrtzLMw5JRs3ok9tawV7D91ZkU":{"message":"da6765795fc67c02226d5ab8e64a8ad2f742b2358bd434bf94a58dbe7688a7d1","signature":"177668dd07e1bc4a68dae803c615d865ab8c1c60b31ca8a72e04c6fd32612cd7237d175612196b0959c328dca11cd5b8e9206e39fd2d8cf42e01072ed7cc42e5"}}}',
-        proofInputAddress: 'n2exWPfsSsrLfgmVD9R6grbgpWh6KGtjGM',
-        proofBurnAddress: 'n4CNC5M8RHfhXmi4yfHL2CFw5xNwC95Ea2',
-        txId: 'cf00521584387670c2f35d6521cc93af7de1994161fd1eed2274833e4f78861c' } },
+   { mo8AiR6KZqEqjMENZPG8UW4Wt5PzbzPoPy:
+      { transactionString: '{"outputs":[{"amount":20000,"spendInfoHash":"e0b3b4c23b35f97f5835e9ac3b06942c8e638a9cceceefd9667ead4ba1f2b847"}],"specification":"0.1.0","changeAddresses":{"n3wLN9KQh8HeLNy4tkcFB4GPauWaj8r9Nd":{"message":"e0b3b4c23b35f97f5835e9ac3b06942c8e638a9cceceefd9667ead4ba1f2b847","signature":"0aa0c03cdadaae469e5ea17ad0cfb47b7ce31211a1f6bdb28af8bd562dc7a55460b11868fc77f304af2c87a503ce6b5806f6361d32cf3843026b968f100d2191"}}}',
+        proofInputAddress: 'mo8AiR6KZqEqjMENZPG8UW4Wt5PzbzPoPy',
+        proofBurnAddress: 'msJSM3wvcWzYLxHKCkERKCpQUupoiRo8An',
+        txId: '4c9b831e168f02b1f5d343472f71acf3a8dcd37e4b825f368bb0d662c622a9de' } },
   current:
-   { burnTransactionAddress: 'mobraW1vUafk9wYBtCPQw3CNqVj4Mjy9XJ',
-     proofInputAddress: 'n2exWPfsSsrLfgmVD9R6grbgpWh6KGtjGM',
-     proofBurnAddress: 'n4CNC5M8RHfhXmi4yfHL2CFw5xNwC95Ea2' },
+   { burnTransactionAddress: 'mz4YzqzekaLHrTe6QaADKyB5p8fTofPq5v',
+     proofInputAddress: 'mo8AiR6KZqEqjMENZPG8UW4Wt5PzbzPoPy',
+     proofBurnAddress: 'msJSM3wvcWzYLxHKCkERKCpQUupoiRo8An' },
   next:
    { proofInputAddress: undefined,
      proofInputPrivateKey: undefined },
@@ -170,25 +168,25 @@ Bob adds his private details to the XSPOCT note before saving
 Bob's XSPOCT note:
 
 { burnTransactions:
-   { mobraW1vUafk9wYBtCPQw3CNqVj4Mjy9XJ:
-      { transactionString: '{"asset":{"name":"FakeUSD","description":"FakeUSD is a token that is redemable for US Dollars by presenting ownership of a FakeUSD token to a Fake Bank branch.","supply":40000000,"precision":2,"publicKey":"publicKey","validatePublicKey":true},"outputs":[{"amount":20000,"spendInfoHash":"4ecd3de13b389108d9d97a067b5985fc1884724b60c76c3c8dfbeb75d591efeb"},{"amount":39980000,"spendInfoHash":"068914ae5bfbad53388f76dd7efa8e5ce9e949c190b5ed278cbc93ac9caa914a"}],"specification":"0.1.0"}',
+   { mz4YzqzekaLHrTe6QaADKyB5p8fTofPq5v:
+      { transactionString: '{"asset":{"name":"FakeUSD","description":"FakeUSD is a token that is redemable for US Dollars by presenting ownership of a FakeUSD token to a Fake Bank branch.","supply":40000000,"precision":2,"validatePublicKey":true},"outputs":[{"amount":20000,"spendInfoHash":"c52d30fbbb7c3e59c57f7ca1c6174331b7dcae91258eee20f59f5dae42baf8aa"},{"amount":39980000,"spendInfoHash":"40c584918607c85a38c2137851b9181fe8a4590e667977a40ddc0e9dfb8ebc92"}],"specification":"0.1.0"}',
         spendInfoStrings:
-         { '4ecd3de13b389108d9d97a067b5985fc1884724b60c76c3c8dfbeb75d591efeb': '{"proofInputAddress":"n2exWPfsSsrLfgmVD9R6grbgpWh6KGtjGM","specification":"0.1.0","verificationPlatform":"bitcoin-testnet"}' },
-        txId: '1ab98d4a55f8960c450dc412dee17210c5d618730038d6245732c8e1796a8e5b' } },
+         { c52d30fbbb7c3e59c57f7ca1c6174331b7dcae91258eee20f59f5dae42baf8aa: '{"proofInputAddress":"mo8AiR6KZqEqjMENZPG8UW4Wt5PzbzPoPy","specification":"0.1.0","verificationPlatform":"bitcoin-testnet"}' },
+        txId: '4c41fbc93e8784682c431565f01dd5403f5b011b1acc84e0c0f1a4c11d20af8b' } },
   xspoctTransactions:
-   { n2exWPfsSsrLfgmVD9R6grbgpWh6KGtjGM:
-      { transactionString: '{"outputs":[{"amount":20000,"spendInfoHash":"da6765795fc67c02226d5ab8e64a8ad2f742b2358bd434bf94a58dbe7688a7d1"}],"specification":"0.1.0","changeAddresses":{"mzWBZfhbKrtzLMw5JRs3ok9tawV7D91ZkU":{"message":"da6765795fc67c02226d5ab8e64a8ad2f742b2358bd434bf94a58dbe7688a7d1","signature":"177668dd07e1bc4a68dae803c615d865ab8c1c60b31ca8a72e04c6fd32612cd7237d175612196b0959c328dca11cd5b8e9206e39fd2d8cf42e01072ed7cc42e5"}}}',
-        proofInputAddress: 'n2exWPfsSsrLfgmVD9R6grbgpWh6KGtjGM',
-        proofBurnAddress: 'n4CNC5M8RHfhXmi4yfHL2CFw5xNwC95Ea2',
-        txId: 'cf00521584387670c2f35d6521cc93af7de1994161fd1eed2274833e4f78861c',
-        spendInfoString: '{"proofInputAddress":"n4W9HFwx2C59G7LWhH8aakJMUCZPTLw7e4","specification":"0.1.0","verificationPlatform":"bitcoin-testnet"}' } },
+   { mo8AiR6KZqEqjMENZPG8UW4Wt5PzbzPoPy:
+      { transactionString: '{"outputs":[{"amount":20000,"spendInfoHash":"e0b3b4c23b35f97f5835e9ac3b06942c8e638a9cceceefd9667ead4ba1f2b847"}],"specification":"0.1.0","changeAddresses":{"n3wLN9KQh8HeLNy4tkcFB4GPauWaj8r9Nd":{"message":"e0b3b4c23b35f97f5835e9ac3b06942c8e638a9cceceefd9667ead4ba1f2b847","signature":"0aa0c03cdadaae469e5ea17ad0cfb47b7ce31211a1f6bdb28af8bd562dc7a55460b11868fc77f304af2c87a503ce6b5806f6361d32cf3843026b968f100d2191"}}}',
+        proofInputAddress: 'mo8AiR6KZqEqjMENZPG8UW4Wt5PzbzPoPy',
+        proofBurnAddress: 'msJSM3wvcWzYLxHKCkERKCpQUupoiRo8An',
+        txId: '4c9b831e168f02b1f5d343472f71acf3a8dcd37e4b825f368bb0d662c622a9de',
+        spendInfoString: '{"proofInputAddress":"mqi6zQejQdD7EJRwgqfL7j87BJWNqwyZrb","specification":"0.1.0","verificationPlatform":"bitcoin-testnet"}' } },
   current:
-   { burnTransactionAddress: 'mobraW1vUafk9wYBtCPQw3CNqVj4Mjy9XJ',
-     proofInputAddress: 'n2exWPfsSsrLfgmVD9R6grbgpWh6KGtjGM',
-     proofBurnAddress: 'n4CNC5M8RHfhXmi4yfHL2CFw5xNwC95Ea2' },
+   { burnTransactionAddress: 'mz4YzqzekaLHrTe6QaADKyB5p8fTofPq5v',
+     proofInputAddress: 'mo8AiR6KZqEqjMENZPG8UW4Wt5PzbzPoPy',
+     proofBurnAddress: 'msJSM3wvcWzYLxHKCkERKCpQUupoiRo8An' },
   next:
-   { proofInputAddress: 'n4W9HFwx2C59G7LWhH8aakJMUCZPTLw7e4',
-     proofInputPrivateKey: '5fcd0562792a1a147f0136c837788f884066a95245ceff45fc1b965652a3204b' },
+   { proofInputAddress: 'mqi6zQejQdD7EJRwgqfL7j87BJWNqwyZrb',
+     proofInputPrivateKey: '583bbc035fe1b2e5f210b6434fe43b6c5e99f864fb3bd960f3a8e222215984e6' },
   amount: 20000 }
 
 Bob intends to send XSPOCT to Charlie.
@@ -199,10 +197,10 @@ Charlie generates an output address
 Bob adds the output string to the XSPOCT note and enters proof on the blockchain
 
 utxo
-<UnspentOutput: e31e5fd558e66d30f9d3107b44769e2071ff78c643be5571956bb9fcb5aa9d6c:2, satoshis: 10000, address: mpxg8ZSNRVqG6cAg9QEdMbFYjrcsZLjSzw>
+<UnspentOutput: 18a9b3d156d7f74bfb2b9276dca6fc7f0d4061e197b0533687e082ef3ecddf52:2, satoshis: 10000, address: mjdwfbS2wSxVbBmA6JAaDQb71rrXiZypp1>
 
 proofInputAddress
-n4W9HFwx2C59G7LWhH8aakJMUCZPTLw7e4
+mqi6zQejQdD7EJRwgqfL7j87BJWNqwyZrb
 
 chargeUpTransactionAmount
 8700
@@ -211,53 +209,53 @@ chainTransactionFee
 1300
 
 inputAddressBitcore
-<Address: mpxg8ZSNRVqG6cAg9QEdMbFYjrcsZLjSzw, type: pubkeyhash, network: testnet>
+<Address: mjdwfbS2wSxVbBmA6JAaDQb71rrXiZypp1, type: pubkeyhash, network: testnet>
 
 chainTransactionInputPrivateKey
-7f5458ecbfb00a4700e1cfd2a79891cb3621cb8b74e94fc954ecd8808b3e65a6
+11c7861af240cd786e7dab854fd277d027a77291e341a4449e60caa35b7825c6
 
 utxo
-<UnspentOutput: d1f2fdf359d56e41d1c5c8be6cda2a16c6a69727037194b2e4d4f0b8010d5101:0, satoshis: 8700, address: n4W9HFwx2C59G7LWhH8aakJMUCZPTLw7e4>
+<UnspentOutput: ed58e8b8e3e5e2a069b7374045b347ff7ced17973c117bf2542f4d939a97a73a:0, satoshis: 8700, address: mqi6zQejQdD7EJRwgqfL7j87BJWNqwyZrb>
 
 proofBurnAddress
-moLNrBpscnxMdCBtw2H1Wsjgh7WFBpawjB
+n1PKVHBdqoY3Tg7cUvcqsbVo2Ybn6SFUGs
 
 microtransactionAmount
-1047
+1450
 
 chainTransactionFee
 1300
 
 changeAddress
-mxQLpX625ip9HbfQNRpidd6Gj3fXYyfWjR
+mpcwxWyLt6chN2Fq6g7widnzMsGnpju3dT
 
  xspoctNote.next.proofInputPrivateKey
-5fcd0562792a1a147f0136c837788f884066a95245ceff45fc1b965652a3204b
+583bbc035fe1b2e5f210b6434fe43b6c5e99f864fb3bd960f3a8e222215984e6
 
 Bob sends Charlie this XSPOCT note:
 
 { burnTransactions:
-   { mobraW1vUafk9wYBtCPQw3CNqVj4Mjy9XJ:
-      { transactionString: '{"asset":{"name":"FakeUSD","description":"FakeUSD is a token that is redemable for US Dollars by presenting ownership of a FakeUSD token to a Fake Bank branch.","supply":40000000,"precision":2,"publicKey":"publicKey","validatePublicKey":true},"outputs":[{"amount":20000,"spendInfoHash":"4ecd3de13b389108d9d97a067b5985fc1884724b60c76c3c8dfbeb75d591efeb"},{"amount":39980000,"spendInfoHash":"068914ae5bfbad53388f76dd7efa8e5ce9e949c190b5ed278cbc93ac9caa914a"}],"specification":"0.1.0"}',
+   { mz4YzqzekaLHrTe6QaADKyB5p8fTofPq5v:
+      { transactionString: '{"asset":{"name":"FakeUSD","description":"FakeUSD is a token that is redemable for US Dollars by presenting ownership of a FakeUSD token to a Fake Bank branch.","supply":40000000,"precision":2,"validatePublicKey":true},"outputs":[{"amount":20000,"spendInfoHash":"c52d30fbbb7c3e59c57f7ca1c6174331b7dcae91258eee20f59f5dae42baf8aa"},{"amount":39980000,"spendInfoHash":"40c584918607c85a38c2137851b9181fe8a4590e667977a40ddc0e9dfb8ebc92"}],"specification":"0.1.0"}',
         spendInfoStrings:
-         { '4ecd3de13b389108d9d97a067b5985fc1884724b60c76c3c8dfbeb75d591efeb': '{"proofInputAddress":"n2exWPfsSsrLfgmVD9R6grbgpWh6KGtjGM","specification":"0.1.0","verificationPlatform":"bitcoin-testnet"}' },
-        txId: '1ab98d4a55f8960c450dc412dee17210c5d618730038d6245732c8e1796a8e5b' } },
+         { c52d30fbbb7c3e59c57f7ca1c6174331b7dcae91258eee20f59f5dae42baf8aa: '{"proofInputAddress":"mo8AiR6KZqEqjMENZPG8UW4Wt5PzbzPoPy","specification":"0.1.0","verificationPlatform":"bitcoin-testnet"}' },
+        txId: '4c41fbc93e8784682c431565f01dd5403f5b011b1acc84e0c0f1a4c11d20af8b' } },
   xspoctTransactions:
-   { n2exWPfsSsrLfgmVD9R6grbgpWh6KGtjGM:
-      { transactionString: '{"outputs":[{"amount":20000,"spendInfoHash":"da6765795fc67c02226d5ab8e64a8ad2f742b2358bd434bf94a58dbe7688a7d1"}],"specification":"0.1.0","changeAddresses":{"mzWBZfhbKrtzLMw5JRs3ok9tawV7D91ZkU":{"message":"da6765795fc67c02226d5ab8e64a8ad2f742b2358bd434bf94a58dbe7688a7d1","signature":"177668dd07e1bc4a68dae803c615d865ab8c1c60b31ca8a72e04c6fd32612cd7237d175612196b0959c328dca11cd5b8e9206e39fd2d8cf42e01072ed7cc42e5"}}}',
-        proofInputAddress: 'n2exWPfsSsrLfgmVD9R6grbgpWh6KGtjGM',
-        proofBurnAddress: 'n4CNC5M8RHfhXmi4yfHL2CFw5xNwC95Ea2',
-        txId: 'cf00521584387670c2f35d6521cc93af7de1994161fd1eed2274833e4f78861c',
-        spendInfoString: '{"proofInputAddress":"n4W9HFwx2C59G7LWhH8aakJMUCZPTLw7e4","specification":"0.1.0","verificationPlatform":"bitcoin-testnet"}' },
-     n4W9HFwx2C59G7LWhH8aakJMUCZPTLw7e4:
-      { transactionString: '{"previousProofAddress":"n2exWPfsSsrLfgmVD9R6grbgpWh6KGtjGM","outputs":[{"amount":20000,"spendInfoHash":"dd37b1119428008da980111d5480d847e28a2c2cd188fcbcd7bb770980972720"}],"specification":"0.1.0","changeAddresses":{"mxQLpX625ip9HbfQNRpidd6Gj3fXYyfWjR":{"message":"dd37b1119428008da980111d5480d847e28a2c2cd188fcbcd7bb770980972720","signature":"09c50f6bd7bbc649ab7a13ffd2d6a83c8550b9e816a622a4152c7f5c9402f9036d49f0a62f911d9075262137a81f56fed20263e107563c42025900145eef3833"}}}',
-        proofInputAddress: 'n4W9HFwx2C59G7LWhH8aakJMUCZPTLw7e4',
-        proofBurnAddress: 'moLNrBpscnxMdCBtw2H1Wsjgh7WFBpawjB',
-        txId: '785c4bcd68cc6b36f0f280e4cabf9a184a9577fec0ec08e964e8016d64465251' } },
+   { mo8AiR6KZqEqjMENZPG8UW4Wt5PzbzPoPy:
+      { transactionString: '{"outputs":[{"amount":20000,"spendInfoHash":"e0b3b4c23b35f97f5835e9ac3b06942c8e638a9cceceefd9667ead4ba1f2b847"}],"specification":"0.1.0","changeAddresses":{"n3wLN9KQh8HeLNy4tkcFB4GPauWaj8r9Nd":{"message":"e0b3b4c23b35f97f5835e9ac3b06942c8e638a9cceceefd9667ead4ba1f2b847","signature":"0aa0c03cdadaae469e5ea17ad0cfb47b7ce31211a1f6bdb28af8bd562dc7a55460b11868fc77f304af2c87a503ce6b5806f6361d32cf3843026b968f100d2191"}}}',
+        proofInputAddress: 'mo8AiR6KZqEqjMENZPG8UW4Wt5PzbzPoPy',
+        proofBurnAddress: 'msJSM3wvcWzYLxHKCkERKCpQUupoiRo8An',
+        txId: '4c9b831e168f02b1f5d343472f71acf3a8dcd37e4b825f368bb0d662c622a9de',
+        spendInfoString: '{"proofInputAddress":"mqi6zQejQdD7EJRwgqfL7j87BJWNqwyZrb","specification":"0.1.0","verificationPlatform":"bitcoin-testnet"}' },
+     mqi6zQejQdD7EJRwgqfL7j87BJWNqwyZrb:
+      { transactionString: '{"previousProofAddress":"mo8AiR6KZqEqjMENZPG8UW4Wt5PzbzPoPy","outputs":[{"amount":20000,"spendInfoHash":"9d95e5771e8802f284e2689c7224d07738b1b30fd3ee1abb402e132db86812a0"}],"specification":"0.1.0","changeAddresses":{"mpcwxWyLt6chN2Fq6g7widnzMsGnpju3dT":{"message":"9d95e5771e8802f284e2689c7224d07738b1b30fd3ee1abb402e132db86812a0","signature":"76fd744c4d4717dbf98fc28151d35728e760c03e8b46335328f1007dfbf3cba26bc3729a440cb513c86ecf9df2860b1b819850839eeadd1bea530e51648efe30"}}}',
+        proofInputAddress: 'mqi6zQejQdD7EJRwgqfL7j87BJWNqwyZrb',
+        proofBurnAddress: 'n1PKVHBdqoY3Tg7cUvcqsbVo2Ybn6SFUGs',
+        txId: '9ede59f351436c4be9a37ac1f7977f0b070d97cf70ad52c3e86644fee35cd9bd' } },
   current:
-   { burnTransactionAddress: 'mobraW1vUafk9wYBtCPQw3CNqVj4Mjy9XJ',
-     proofInputAddress: 'n4W9HFwx2C59G7LWhH8aakJMUCZPTLw7e4',
-     proofBurnAddress: 'moLNrBpscnxMdCBtw2H1Wsjgh7WFBpawjB' },
+   { burnTransactionAddress: 'mz4YzqzekaLHrTe6QaADKyB5p8fTofPq5v',
+     proofInputAddress: 'mqi6zQejQdD7EJRwgqfL7j87BJWNqwyZrb',
+     proofBurnAddress: 'n1PKVHBdqoY3Tg7cUvcqsbVo2Ybn6SFUGs' },
   next:
    { proofInputAddress: undefined,
      proofInputPrivateKey: undefined },
@@ -270,29 +268,29 @@ Charlie adds his private details to the XSPOCT note before saving
 Charlie's XSPOCT note:
 
 { burnTransactions:
-   { mobraW1vUafk9wYBtCPQw3CNqVj4Mjy9XJ:
-      { transactionString: '{"asset":{"name":"FakeUSD","description":"FakeUSD is a token that is redemable for US Dollars by presenting ownership of a FakeUSD token to a Fake Bank branch.","supply":40000000,"precision":2,"publicKey":"publicKey","validatePublicKey":true},"outputs":[{"amount":20000,"spendInfoHash":"4ecd3de13b389108d9d97a067b5985fc1884724b60c76c3c8dfbeb75d591efeb"},{"amount":39980000,"spendInfoHash":"068914ae5bfbad53388f76dd7efa8e5ce9e949c190b5ed278cbc93ac9caa914a"}],"specification":"0.1.0"}',
+   { mz4YzqzekaLHrTe6QaADKyB5p8fTofPq5v:
+      { transactionString: '{"asset":{"name":"FakeUSD","description":"FakeUSD is a token that is redemable for US Dollars by presenting ownership of a FakeUSD token to a Fake Bank branch.","supply":40000000,"precision":2,"validatePublicKey":true},"outputs":[{"amount":20000,"spendInfoHash":"c52d30fbbb7c3e59c57f7ca1c6174331b7dcae91258eee20f59f5dae42baf8aa"},{"amount":39980000,"spendInfoHash":"40c584918607c85a38c2137851b9181fe8a4590e667977a40ddc0e9dfb8ebc92"}],"specification":"0.1.0"}',
         spendInfoStrings:
-         { '4ecd3de13b389108d9d97a067b5985fc1884724b60c76c3c8dfbeb75d591efeb': '{"proofInputAddress":"n2exWPfsSsrLfgmVD9R6grbgpWh6KGtjGM","specification":"0.1.0","verificationPlatform":"bitcoin-testnet"}' },
-        txId: '1ab98d4a55f8960c450dc412dee17210c5d618730038d6245732c8e1796a8e5b' } },
+         { c52d30fbbb7c3e59c57f7ca1c6174331b7dcae91258eee20f59f5dae42baf8aa: '{"proofInputAddress":"mo8AiR6KZqEqjMENZPG8UW4Wt5PzbzPoPy","specification":"0.1.0","verificationPlatform":"bitcoin-testnet"}' },
+        txId: '4c41fbc93e8784682c431565f01dd5403f5b011b1acc84e0c0f1a4c11d20af8b' } },
   xspoctTransactions:
-   { n2exWPfsSsrLfgmVD9R6grbgpWh6KGtjGM:
-      { transactionString: '{"outputs":[{"amount":20000,"spendInfoHash":"da6765795fc67c02226d5ab8e64a8ad2f742b2358bd434bf94a58dbe7688a7d1"}],"specification":"0.1.0","changeAddresses":{"mzWBZfhbKrtzLMw5JRs3ok9tawV7D91ZkU":{"message":"da6765795fc67c02226d5ab8e64a8ad2f742b2358bd434bf94a58dbe7688a7d1","signature":"177668dd07e1bc4a68dae803c615d865ab8c1c60b31ca8a72e04c6fd32612cd7237d175612196b0959c328dca11cd5b8e9206e39fd2d8cf42e01072ed7cc42e5"}}}',
-        proofInputAddress: 'n2exWPfsSsrLfgmVD9R6grbgpWh6KGtjGM',
-        proofBurnAddress: 'n4CNC5M8RHfhXmi4yfHL2CFw5xNwC95Ea2',
-        txId: 'cf00521584387670c2f35d6521cc93af7de1994161fd1eed2274833e4f78861c',
-        spendInfoString: '{"proofInputAddress":"n4W9HFwx2C59G7LWhH8aakJMUCZPTLw7e4","specification":"0.1.0","verificationPlatform":"bitcoin-testnet"}' },
-     n4W9HFwx2C59G7LWhH8aakJMUCZPTLw7e4:
-      { transactionString: '{"previousProofAddress":"n2exWPfsSsrLfgmVD9R6grbgpWh6KGtjGM","outputs":[{"amount":20000,"spendInfoHash":"dd37b1119428008da980111d5480d847e28a2c2cd188fcbcd7bb770980972720"}],"specification":"0.1.0","changeAddresses":{"mxQLpX625ip9HbfQNRpidd6Gj3fXYyfWjR":{"message":"dd37b1119428008da980111d5480d847e28a2c2cd188fcbcd7bb770980972720","signature":"09c50f6bd7bbc649ab7a13ffd2d6a83c8550b9e816a622a4152c7f5c9402f9036d49f0a62f911d9075262137a81f56fed20263e107563c42025900145eef3833"}}}',
-        proofInputAddress: 'n4W9HFwx2C59G7LWhH8aakJMUCZPTLw7e4',
-        proofBurnAddress: 'moLNrBpscnxMdCBtw2H1Wsjgh7WFBpawjB',
-        txId: '785c4bcd68cc6b36f0f280e4cabf9a184a9577fec0ec08e964e8016d64465251',
-        spendInfoString: '{"proofInputAddress":"moZXDHXW3JdZKRVLv8rGygC6YVDNWcWFLt","specification":"0.1.0","verificationPlatform":"bitcoin-testnet"}' } },
+   { mo8AiR6KZqEqjMENZPG8UW4Wt5PzbzPoPy:
+      { transactionString: '{"outputs":[{"amount":20000,"spendInfoHash":"e0b3b4c23b35f97f5835e9ac3b06942c8e638a9cceceefd9667ead4ba1f2b847"}],"specification":"0.1.0","changeAddresses":{"n3wLN9KQh8HeLNy4tkcFB4GPauWaj8r9Nd":{"message":"e0b3b4c23b35f97f5835e9ac3b06942c8e638a9cceceefd9667ead4ba1f2b847","signature":"0aa0c03cdadaae469e5ea17ad0cfb47b7ce31211a1f6bdb28af8bd562dc7a55460b11868fc77f304af2c87a503ce6b5806f6361d32cf3843026b968f100d2191"}}}',
+        proofInputAddress: 'mo8AiR6KZqEqjMENZPG8UW4Wt5PzbzPoPy',
+        proofBurnAddress: 'msJSM3wvcWzYLxHKCkERKCpQUupoiRo8An',
+        txId: '4c9b831e168f02b1f5d343472f71acf3a8dcd37e4b825f368bb0d662c622a9de',
+        spendInfoString: '{"proofInputAddress":"mqi6zQejQdD7EJRwgqfL7j87BJWNqwyZrb","specification":"0.1.0","verificationPlatform":"bitcoin-testnet"}' },
+     mqi6zQejQdD7EJRwgqfL7j87BJWNqwyZrb:
+      { transactionString: '{"previousProofAddress":"mo8AiR6KZqEqjMENZPG8UW4Wt5PzbzPoPy","outputs":[{"amount":20000,"spendInfoHash":"9d95e5771e8802f284e2689c7224d07738b1b30fd3ee1abb402e132db86812a0"}],"specification":"0.1.0","changeAddresses":{"mpcwxWyLt6chN2Fq6g7widnzMsGnpju3dT":{"message":"9d95e5771e8802f284e2689c7224d07738b1b30fd3ee1abb402e132db86812a0","signature":"76fd744c4d4717dbf98fc28151d35728e760c03e8b46335328f1007dfbf3cba26bc3729a440cb513c86ecf9df2860b1b819850839eeadd1bea530e51648efe30"}}}',
+        proofInputAddress: 'mqi6zQejQdD7EJRwgqfL7j87BJWNqwyZrb',
+        proofBurnAddress: 'n1PKVHBdqoY3Tg7cUvcqsbVo2Ybn6SFUGs',
+        txId: '9ede59f351436c4be9a37ac1f7977f0b070d97cf70ad52c3e86644fee35cd9bd',
+        spendInfoString: '{"proofInputAddress":"mwNkiERnVY97fhsb7xjLqn9Q5B6S3VXuqR","specification":"0.1.0","verificationPlatform":"bitcoin-testnet"}' } },
   current:
-   { burnTransactionAddress: 'mobraW1vUafk9wYBtCPQw3CNqVj4Mjy9XJ',
-     proofInputAddress: 'n4W9HFwx2C59G7LWhH8aakJMUCZPTLw7e4',
-     proofBurnAddress: 'moLNrBpscnxMdCBtw2H1Wsjgh7WFBpawjB' },
+   { burnTransactionAddress: 'mz4YzqzekaLHrTe6QaADKyB5p8fTofPq5v',
+     proofInputAddress: 'mqi6zQejQdD7EJRwgqfL7j87BJWNqwyZrb',
+     proofBurnAddress: 'n1PKVHBdqoY3Tg7cUvcqsbVo2Ybn6SFUGs' },
   next:
-   { proofInputAddress: 'moZXDHXW3JdZKRVLv8rGygC6YVDNWcWFLt',
-     proofInputPrivateKey: 'da660e598c83c6802b9dbb09dfe2b4640af6a58b33a55761c3d71c774dea5c41' },
+   { proofInputAddress: 'mwNkiERnVY97fhsb7xjLqn9Q5B6S3VXuqR',
+     proofInputPrivateKey: '05cb762694caa9fdf2b560d00049d51b7af2225f17c6e4bf48724561f8ea2aac' },
   amount: 20000 }
