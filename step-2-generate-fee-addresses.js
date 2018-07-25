@@ -31,7 +31,7 @@ fs.writeFile('results/starting-keys.json',
     JSON.stringify(privateKeysForStorage), 'utf8', ()=>{}
 );
 
-fs.writeFile('results/starting-keys-backup-' + privateKeysForStorage.change + '.json',
+fs.writeFile('results/starting-keys-backup-' + change.privateKey.toPublicKey().toAddress().toString() + '.json',
     JSON.stringify(privateKeysForStorage), 'utf8', ()=>{}
 );
 
