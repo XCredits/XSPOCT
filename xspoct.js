@@ -351,6 +351,7 @@ function generateSingleOutput(amount, networkName) {
     proofInputAddress: proofInputAddress,
     specification: globalSpecification,
     verificationPlatform: 'bitcoin-' + networkName,
+    nonce: crypto.randomFillSync(Buffer.alloc(32)).toString('base64'),
   };
   const spendInfoString = JSON.stringify(spendInfo);
   const spendInfoHash = sha256Plus(spendInfoString);
