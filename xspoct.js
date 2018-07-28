@@ -6,7 +6,7 @@ const bitcore = require('bitcore-lib');
 const bs58check = require('bs58check');
 const crypto = require('crypto');
 const secp256k1 = require('secp256k1');
-const globalSpecification = '0.1.0';
+const globalSpecification = '0.3.0';
 
 
 bitcore.Networks.defaultNetwork = bitcore.Networks.testnet;
